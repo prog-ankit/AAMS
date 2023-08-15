@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">attendanceacademia</string>
+
+    <!--Student-->
+
+    <!--Faculty-->
+    <!--Attendance-->
+    <string name="mark"><u>Mark Attendance</u></string>
+    <string name="edit"><u>Edit Attendance</u></string>
+    <string name="showattend"><u>Show Attendance</u></string>
+    <string name="updateattend"><u>Update Attendance</u></string>
+    <string name="attenddetail"><u>Select Attendance Details</u></string>
+
+
+    <string name="forgotpassword"><u>Forgot Password?</u></string>
+    <string name="arrangeslt"><u>Arrange Seminars/Tests</u></string>
+    <string name="leaveselect"><u>Student Leaves</u></string>
+    <string name="studentleaveselect"><u>Select Leave</u></string>
+    <string name="yourleave"><u>View Leave</u></string>
+    <string name="manageLeave"><u>Manage Leave</u></string>
+    <string name="modifymeet"><u>Modify Meeting</u></string>
+    <string name="modifyslt"><u>Modify Seminar/Test</u></string>
+    <string name="modifyproxy"><u>Modify Proxy</u></string>
+    <string name="facviewattend"><u>Select Student</u></string>
+    <string name="editslt"><u>Your Arranged Seminars/Tests</u></string>
+    <string name="viewslt"><u>View Seminar/Test</u></string>
+    <string name="viewsltdesc"><u>View Seminar/Test Description</u></string>
+    <string name="setproxy"><u>Arrange Proxy</u></string>
+    <string name="editmeeting"><u>Your Arranged Meetings</u></string>
+    <string name="editproxy"><u>Your Arranged Proxies</u></string>
+    <string name="allmeeting"><u>All Meetings</u></string>
+    <string name="allproxy"><u>All Proxy List</u></string>
+    <string name="viewmeeting"><u>View Meeting</u></string>
+    <string name="arrangemeeting"><u>Arrange Meeting</u></string>
+    <string name="meetingdesc"><u>Meeting Description</u></string>
+    <string name="proxydesc"><u>Proxy Description</u></string>
+    <string name="viewprovisional"><u>View Provisional Detain List</u></string>
+    <string name="studentviewprovisional"><u>View Detain Status</u></string>
+    <string name="searchstudent"><u>Search Student</u></string>
+    <string name="studentviewattendance"><u>View Attendance Status</u></string>
+    <string name="selecttt"><u>Select Timetable</u></string>
+    <string name="applyleave"><u>Apply Leave</u></string>
+    <string name="editprofile"><u>Edit Profile</u></string>
+    <string name="studentprofile"><u>Student Profile</u></string>
+    <string-array name="apply_leave">
+        <item>--Select Faculty--</item>
+        <item>Faculty 1</item>
+        <item>Faculty 2</item>
+        <item>Faculty 3</item>
+        <item>Faculty 4</item>
+    </string-array>
+
+    <string-array name="division">
+        <item>--Select Division--</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+    </string-array>
+
+    <string-array name="reason">
+        <item>--Select Reason--</item>
+        <item>Medical Leave</item>
+        <item>Social Function or Gathering</item>
+        <item>Casual Leave</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="subject">
+        <item>--Select Subject--</item>
+        <item>DWPD</item>
+        <item>CMTS</item>
+        <item>CNS</item>
+        <item>JAVA</item>
+    </string-array>
+
+    <string-array name="vslt">
+        <item>--Select Seminar/Test--</item>
+        <item>Test</item>
+        <item>Seminar</item>
+    </string-array>
+
+    <string-array name="type">
+        <item>--Select Type--</item>
+        <item>Lecture</item>
+        <item>Lab</item>
+    </string-array>
+
+    <string-array name="day">
+        <item>--Select Day--</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+    </string-array>
+
+</resources>

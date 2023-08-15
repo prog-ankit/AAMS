@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Faculty.slt_desc">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/main_toolbar"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/viewsltdesc"
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/amaranth"
+            android:textColor="@color/blue"
+            android:textSize="24sp"
+           />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="40dp">
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:stretchColumns="1,2" >
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/txt_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:paddingRight="15dp"
+                        android:text="Date:"
+                        android:fontFamily="@font/amaranth"
+                        android:textColor="#2196F3"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_date_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:fontFamily="@font/amaranth"
+                        android:hint="Date"
+                        android:textSize="16sp"
+                        />
+                </TableRow>
+
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/txt_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:fontFamily="@font/amaranth"
+                        android:text="Time:"
+                        android:textColor="#2196F3"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/txt_time_hint"
+                        android:layout_width="wrap_content"
+                        android:fontFamily="@font/amaranth"
+                        android:layout_height="40dp"
+                        android:hint="Time"
+                        android:textSize="16sp"
+                        />
+                </TableRow>
+
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/txt_topic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="Topic:"
+                        android:textColor="#2196F3"
+                        android:fontFamily="@font/amaranth"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/txt_topic_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:hint="Topic"
+                        android:fontFamily="@font/amaranth"
+                        android:textSize="16sp"
+                        />
+                </TableRow>
+
+
+                <!--<TableRow>
+                    <TextView
+                        android:id="@+id/txt_organizer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="Organizer:"
+                        android:paddingRight="15dp"
+                        android:textColor="#2196F3"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/txt_organizer_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Organizer"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </TableRow>-->
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/txt_faculty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="Lecturer Name:"
+                        android:fontFamily="@font/amaranth"
+                        android:paddingEnd="15dp"
+                        android:textColor="#2196F3"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/txt_faculty_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:hint="Lecturer name"
+                        android:fontFamily="@font/amaranth"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/txt_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="Description:"
+                        android:fontFamily="@font/amaranth"
+                        android:textColor="#2196F3"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_span="2"
+                        />
+                </TableRow>
+
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/txt_Description_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Description"
+                        android:fontFamily="@font/amaranth"
+                        android:textSize="16sp"
+                        android:layout_span="2"
+                        />
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

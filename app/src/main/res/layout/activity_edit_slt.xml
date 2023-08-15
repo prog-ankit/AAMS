@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Faculty.editSlt">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/main_toolbar"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp"
+        android:padding="10dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/modifyslt"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:textSize="24sp"
+            android:fontFamily="@font/amaranth"
+            android:layout_marginBottom="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="55dp"
+            >
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/groupSlt">
+
+                <RadioButton
+                    android:id="@+id/seminarSlt"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Seminar"
+                    android:textSize="18sp"
+
+                    android:textColor="@color/blue"/>
+
+                <RadioButton
+                    android:id="@+id/testSlt"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="Test"
+                    android:textSize="18sp"
+                    android:textColor="@color/blue"/>
+            </RadioGroup>
+        </LinearLayout>
+
+
+
+        <EditText
+            android:id="@+id/dateSlt"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:editable="false"
+            android:hint="Date"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/blue"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/ic_date"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/amaranth"
+            android:autofillHints="" />
+        <EditText
+            android:id="@+id/timeSlt"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:editable="false"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/blue"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/ic_time"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/amaranth"
+            android:layout_marginTop="20dp"
+
+            android:hint="Time"
+            />
+
+        <EditText
+            android:id="@+id/topicSlt"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/blue"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/ic_topic"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/amaranth"
+            android:hint="Topic"
+            />
+
+        <EditText
+            android:id="@+id/lecturernameSlt"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/blue"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/ic_person"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/amaranth"
+            android:hint="Lecturer Name"
+            />
+
+        <EditText
+            android:id="@+id/descSlt"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/blue"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/ic_date"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/amaranth"
+            android:hint="Description"
+            android:maxLines="6"
+            android:inputType="textMultiLine"
+            />
+
+        <android.widget.Button
+            android:id="@+id/button"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/buttondesign"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:onClick="updateSlt"
+            android:text="Update Seminar/Test"
+            android:fontFamily="@font/amaranth"
+            android:textColor="@color/white"
+             />
+    </LinearLayout>
+
+</RelativeLayout>

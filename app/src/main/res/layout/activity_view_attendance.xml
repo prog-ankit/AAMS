@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Student.view_attendance">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/main_toolbar"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/studentviewattendance"
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/amaranth"
+            android:textColor="@color/blue"
+            android:textSize="22sp"
+           />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="25dp">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:stretchColumns="1,2"
+                >
+
+                <TableRow>
+                    <Spinner
+                        android:id="@+id/subject"
+                        android:layout_width="350dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/spinner_style_all"
+                        android:entries="@array/subject"
+                        />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/txt_subject_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="Subject Name:"
+                        android:textColor="#2196F3"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/amaranth"
+
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_span="2"
+                        />
+                </TableRow>
+
+
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/subject_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="Subject Name"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/amaranth"
+                        android:layout_span="2"
+                        />
+                </TableRow>
+
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/txt_faculty_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:fontFamily="@font/amaranth"
+
+                        android:text="Subject Faculty Name:"
+                        android:textColor="#2196F3"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_span="2"
+                        />
+                </TableRow>
+
+
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/faculty_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:fontFamily="@font/amaranth"
+
+                        android:text="Faculty Name"
+                        android:textSize="16sp"
+                        android:layout_span="2"
+                        />
+                </TableRow>
+
+
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/txt_attendance"
+                        android:layout_width="match_parent"
+
+                        android:fontFamily="@font/amaranth"
+                        android:layout_height="40dp"
+                        android:text="Subject Attendance:"
+                        android:textColor="#2196F3"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_span="2"
+                        />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/subject_attendance"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+
+                        android:fontFamily="@font/amaranth"
+                        android:text="Subject Attendance"
+                        android:textSize="16sp"
+                        android:layout_span="2"
+                        />
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

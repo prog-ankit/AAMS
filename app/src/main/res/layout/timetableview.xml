@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <TableRow
+        android:padding="10dp"
+        android:background="@drawable/round"
+        >
+
+        <TextView
+            android:id="@+id/time_tv"
+            android:layout_width="150dp"
+            android:layout_weight="1"
+
+
+            android:hint="Time"
+            android:fontFamily="@font/amaranth"
+            android:textSize="16sp"
+
+
+            />
+
+        <TextView
+            android:id="@+id/facsub_tv"
+            android:layout_width="150dp"
+            android:layout_weight="1"
+
+
+            android:hint="Faculty/Subject"
+            android:textSize="16sp"
+            android:fontFamily="@font/amaranth"
+
+
+            />
+
+        <TextView
+            android:id="@+id/roombat_tv"
+            android:layout_width="150dp"
+            android:hint="Room/Batch"
+            android:textSize="16sp"
+          android:layout_weight="1"
+            android:fontFamily="@font/amaranth"
+            />
+    </TableRow>
+</TableLayout>

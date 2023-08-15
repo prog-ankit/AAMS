@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Faculty.edit_proxy">
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+    <include
+        layout="@layout/main_toolbar"/>
+
+  </LinearLayout>
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:layout_marginStart="20dp"
+      android:layout_marginEnd="20dp"
+      android:layout_marginBottom="20dp"
+      android:layout_marginTop="100dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/modifyproxy"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:textSize="26sp"
+        android:fontFamily="@font/amaranth"
+        android:layout_marginBottom="20dp" />
+
+    <Spinner
+        android:id="@+id/faculty"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/spinner_style_all"
+
+        android:layout_gravity="center" />
+
+    <EditText
+        android:id="@+id/date_proxy"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:editable="false"
+        android:hint="Date"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/ic_date"
+        android:backgroundTint="@color/blue"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/amaranth"
+        android:autofillHints=""/>
+
+    <EditText
+        android:id="@+id/from_time"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:editable="false"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/ic_time"
+        android:backgroundTint="@color/blue"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/amaranth"
+        android:hint="From Time"
+        />
+
+    <EditText
+        android:id="@+id/to_time"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:editable="false"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/blue"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/amaranth"
+        android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/ic_time"
+
+        android:hint="To Time"
+        />
+
+    <EditText
+        android:id="@+id/room_no"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/blue"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/amaranth"
+        android:drawableStart="@drawable/ic_room"
+        android:maxLength="5"
+        android:inputType="number"
+        android:hint="Room"
+        />
+
+    <EditText
+        android:id="@+id/descProxy"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/blue"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/amaranth"
+        android:drawableStart="@drawable/ic_description"
+        android:hint="Description"
+
+        android:maxLines="6"
+        android:inputType="textMultiLine"
+        />
+
+    <android.widget.Button
+        android:id="@+id/button"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/buttondesign"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:onClick="updateProxy"
+        android:fontFamily="@font/amaranth"
+        android:text="Update Proxy"
+        android:textColor="@color/white"
+        />
+  </LinearLayout>
+
+</RelativeLayout>

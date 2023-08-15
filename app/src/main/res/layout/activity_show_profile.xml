@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Faculty.showProfile">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/main_toolbar"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/studentprofile"
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/amaranth"
+            android:textColor="@color/blue"
+            android:textSize="22sp"
+         />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="170dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profilepic"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:src="@drawable/ic_user"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/profileenrollment"
+                android:layout_width="270dp"
+                android:layout_height="45dp"
+                android:hint="Enrollment"
+                android:inputType="text"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/ic_enrollment"
+                android:drawablePadding="5dp"
+                android:textColor="@color/blue"
+                android:textColorHint="@color/blue"
+                android:background="@drawable/edittext_activity"
+                android:focusable="false"
+                android:autofillHints="" />
+            <EditText
+                android:id="@+id/profilestudent"
+                android:layout_width="270dp"
+                android:layout_height="45dp"
+                android:hint="Username"
+                android:inputType="text"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/ic_user"
+                android:drawablePadding="5dp"
+                android:textColor="@color/blue"
+                android:textColorHint="@color/blue"
+                android:background="@drawable/edittext_activity"
+                android:focusable="false"
+                android:autofillHints="" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+                <EditText
+                    android:id="@+id/profilesem"
+                    android:layout_width="130dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:hint="Semester"
+                    android:inputType="text"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/blue"
+                    android:textColorHint="@color/blue"
+                    android:background="@drawable/edittext_activity"
+                    android:focusable="false"
+                    android:autofillHints="" />
+
+                <EditText
+                    android:id="@+id/profiledivision"
+                    android:layout_width="130dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:hint="Division"
+                    android:inputType="text"
+                    android:layout_marginTop="10dp"
+
+                    android:textColor="@color/blue"
+                    android:textColorHint="@color/blue"
+                    android:background="@drawable/edittext_activity"
+                    android:focusable="false"
+                    android:autofillHints="" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/profilecontact"
+                android:layout_width="270dp"
+                android:layout_height="45dp"
+                android:hint="Contact"
+                android:inputType="number"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/ic_contact"
+                android:drawablePadding="5dp"
+                android:textColor="@color/blue"
+                android:textColorHint="@color/blue"
+                android:background="@drawable/edittext_activity"
+                android:focusable="false"
+                android:autofillHints="" />
+
+
+            <android.widget.Spinner
+                android:id="@+id/profilespinner"
+                android:layout_width="270dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/spinner_style"
+                android:entries="@array/subject"
+                style="@style/Spinner"
+                />
+            <EditText
+                android:id="@+id/profileattendanceratio"
+                android:layout_width="270dp"
+                android:layout_height="45dp"
+                android:hint="Percentage"
+                android:inputType="number"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/ic_attendance"
+                android:drawablePadding="5dp"
+                android:textColor="@color/blue"
+                android:textColorHint="@color/blue"
+                android:background="@drawable/edittext_activity"
+                android:focusable="false"
+                android:autofillHints="" />
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Faculty.edit_mark_attendance"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/main_toolbar"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="100dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="@string/edit"
+            android:layout_marginStart="10dp"
+            android:layout_weight="2"
+            android:textStyle="bold"
+            android:fontFamily="@font/amaranth"
+            android:textColor="@color/blue"
+            android:textSize="24sp"
+            />
+
+        <CheckBox
+            android:id="@+id/edit_checkall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Present"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:textColor="@color/blue"
+            />
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ListView
+                android:id="@+id/edit_attend_list"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:divider="@color/blue"
+                android:dividerHeight="2dp"
+                android:choiceMode="multipleChoice"
+                android:layout_marginTop="10dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/edit_showtotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:text="Total: 0"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="2"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"
+                    android:textSize="18sp"
+                    />
+                <android.widget.Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:onClick="updateattendence"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/buttondesign"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

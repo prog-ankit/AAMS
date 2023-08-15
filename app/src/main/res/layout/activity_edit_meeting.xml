@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Faculty.editMeeting">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/main_toolbar"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="100dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/modifymeet"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:textSize="26sp"
+            android:fontFamily="@font/amaranth"
+           />
+        <EditText
+            android:id="@+id/dateMeet"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:editable="false"
+            android:hint="Date"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/blue"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/ic_date"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/amaranth"
+            tools:ignore="TextFields" />
+
+
+        <EditText
+            android:id="@+id/timeMeet"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:editable="false"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/blue"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/ic_time"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/amaranth"
+            android:hint="Time"
+            />
+
+        <EditText
+            android:id="@+id/topicMeet"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/blue"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/ic_topic"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/amaranth"
+            android:inputType="text"
+            android:hint="Topic"
+            />
+
+        <EditText
+            android:id="@+id/roomMeet"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/blue"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/ic_room"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/amaranth"
+            android:inputType="number"
+            android:hint="Room"
+            />
+
+        <EditText
+            android:id="@+id/descMeet"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/blue"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/ic_description"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/amaranth"
+            android:hint="Description"
+            android:maxLines="6"
+            android:inputType="textMultiLine"
+            />
+
+
+
+        <android.widget.Button
+            android:id="@+id/button"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/buttondesign"
+            android:layout_gravity="center"
+            android:textSize="14sp"
+            android:onClick="updateMeeting"
+            android:text="Update Meeting"
+            android:fontFamily="@font/amaranth"
+            android:textColor="@color/white" />
+
+
+
+
+    </LinearLayout>
+</RelativeLayout>

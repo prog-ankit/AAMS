@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Faculty.set_proxy">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/main_toolbar"/>
+
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:id="@+id/mainscroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="100dp"
+            android:layout_marginTop="40dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="50dp"
+                android:text="@string/setproxy"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/amaranth"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+
+            <!-- Components Work-->
+
+
+            <LinearLayout
+                android:id="@+id/mainlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <!-- From Date -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/on_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:backgroundTint="@color/blue"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:drawableStart="@drawable/ic_date"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/amaranth"
+                        android:editable="false"
+                        android:ems="10"
+                        android:hint="Date"
+
+                        />
+
+                </LinearLayout>
+
+                <!-- To Date -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+
+                    <EditText
+                        android:id="@+id/from_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:autofillHints="auto"
+                        android:backgroundTint="@color/blue"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:drawableStart="@drawable/ic_time"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/amaranth"
+                        android:editable="false"
+                        android:ems="10"
+                        android:hint="From Time"
+
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <EditText
+                        android:id="@+id/to_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:autofillHints="auto"
+
+                        android:editable="false"
+                        android:ems="10"
+                        android:backgroundTint="@color/blue"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:drawableStart="@drawable/ic_time"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/amaranth"
+                        android:hint="To Time"
+                    />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+
+
+                    <EditText
+                        android:id="@+id/roomnum"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:autofillHints="auto"
+                        android:backgroundTint="@color/blue"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:drawableStart="@drawable/ic_room"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/amaranth"
+                        android:ems="10"
+                        android:hint="Room no."
+                      />
+
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/spinfaculty"
+                    android:layout_width="340dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/spinner_style_all"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/blue"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:drawableStart="@drawable/ic_date"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/amaranth"
+                        android:ems="10"
+                        android:hint="Description"
+                        android:inputType="textMultiLine"
+
+                        android:maxLines="6"
+                      />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:gravity="center">
+
+                <android.widget.Button
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/buttondesign"
+                    android:onClick="submit"
+                    android:text="Arrange Proxy"
+                    android:fontFamily="@font/amaranth"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <!-- Apply Leave Button -->
+
+
+
+</RelativeLayout>

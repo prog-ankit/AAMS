@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Student.view_detain">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/main_toolbar"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/studentviewprovisional"
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/amaranth"
+            android:textColor="@color/blue"
+            android:textSize="22sp"
+           />
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="25dp">
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1,2,3"
+                >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:fontFamily="@font/amaranth"
+                        android:text="Subject Name"
+                        android:textColor="@color/blue"
+                        android:textSize="16sp"
+                        android:padding="10dp"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:layout_column="1"
+                        />
+
+                    <TextView
+                        android:id="@+id/attend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Attendance"
+
+                        android:fontFamily="@font/amaranth"
+                        android:layout_weight="1"
+                        android:textColor="@color/blue"
+                        android:textSize="16sp"
+                        android:padding="10dp"
+                        android:textStyle="bold"
+                        android:layout_column="1"
+                        />
+
+                    <TextView
+                        android:id="@+id/detain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Status"
+
+                        android:fontFamily="@font/amaranth"
+                        android:padding="10dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/blue"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_column="1"
+                        />
+                </TableRow>
+
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/dwpd_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DWPD"
+                        android:fontFamily="@font/amaranth"
+                        android:padding="10dp"
+                        android:layout_weight="1"
+                        android:textSize="16sp"
+                        android:layout_column="1"
+                        />
+
+                    <TextView
+                        android:id="@+id/dwpd_attend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="N/A"
+                        android:padding="10dp"
+                        android:fontFamily="@font/amaranth"
+                        android:layout_weight="1"
+                        android:textSize="16sp"
+                        android:layout_column="1"
+                        />
+
+                    <TextView
+                        android:id="@+id/dwpd_detain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="N/A"
+                        android:fontFamily="@font/amaranth"
+                        android:padding="10dp"
+                        android:layout_weight="1"
+                        android:textSize="16sp"
+                        android:layout_column="1"
+                        />
+                </TableRow>
+
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/cmts_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CMTS"
+                        android:fontFamily="@font/amaranth"
+                        android:padding="10dp"
+                        android:layout_weight="1"
+                        android:textSize="16sp"
+                        android:layout_column="1"
+                        />
+
+                    <TextView
+                        android:id="@+id/cmts_attend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="N/A"
+                        android:fontFamily="@font/amaranth"
+                        android:padding="10dp"
+                        android:layout_weight="1"
+                        android:textSize="16sp"
+                        android:layout_column="1"
+                        />
+
+                    <TextView
+                        android:id="@+id/cmts_detain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="N/A"
+                        android:fontFamily="@font/amaranth"
+                        android:padding="10dp"
+                        android:layout_weight="1"
+                        android:textSize="16sp"
+                        android:layout_column="1"
+                        />
+                </TableRow>
+
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/cns_Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CNS"
+                        android:fontFamily="@font/amaranth"
+                        android:padding="10dp"
+                        android:layout_weight="1"
+                        android:textSize="16sp"
+                        android:layout_column="1"
+                        />
+
+                    <TextView
+                        android:id="@+id/cns_attend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="N/A"
+                        android:padding="10dp"
+                        android:fontFamily="@font/amaranth"
+                        android:layout_weight="1"
+                        android:textSize="16sp"
+                        android:layout_column="1"
+                        />
+
+                    <TextView
+                        android:id="@+id/cns_detain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="N/A"
+                        android:padding="10dp"
+                        android:fontFamily="@font/amaranth"
+                        android:layout_weight="1"
+                        android:textSize="16sp"
+                        android:layout_column="1"
+                        />
+                </TableRow>
+
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/java_Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="JAVA"
+                        android:padding="10dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/amaranth"
+                        android:textSize="16sp"
+                        android:layout_column="1"
+                        />
+
+                    <TextView
+                        android:id="@+id/java_attend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="N/A"
+                        android:fontFamily="@font/amaranth"
+                        android:padding="10dp"
+                        android:layout_weight="1"
+                        android:textSize="16sp"
+                        android:layout_column="1"
+                        />
+
+                    <TextView
+                        android:id="@+id/java_detain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="N/A"
+                        android:fontFamily="@font/amaranth"
+                        android:padding="10dp"
+                        android:layout_weight="1"
+                        android:textSize="16sp"
+                        android:layout_column="1"
+                        />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

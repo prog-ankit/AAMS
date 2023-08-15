@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Student.view_leave">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/main_toolbar"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="90dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/yourleave"
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/amaranth"
+            android:textColor="@color/blue"
+            android:textSize="22sp"
+      />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="25dp">
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1,2" >
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/txt_from"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="From:"
+                        android:fontFamily="@font/amaranth"
+
+                        android:textColor="#2196F3"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:paddingRight="15dp"
+
+
+                        />
+
+                    <TextView
+                        android:id="@+id/txt_from_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:hint="Start date"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/amaranth"
+
+
+                        />
+                </TableRow>
+
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/txt_to"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="To:"
+                        android:textColor="#2196F3"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/amaranth"
+
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/txt_to_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:hint="End date"
+                        android:fontFamily="@font/amaranth"
+
+                        android:textSize="16sp"
+                        />
+                </TableRow>
+
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/txt_counselor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="Faculty Name:"
+                        android:paddingEnd="15dp"
+                        android:fontFamily="@font/amaranth"
+
+                        android:textColor="#2196F3"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/txt_counselor_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:hint="Faculty Name"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/amaranth"
+
+                        />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="Status:"
+                        android:textColor="#2196F3"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/amaranth"
+
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:hint="Pending"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/amaranth"
+
+                        />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/txt_reason"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="Reason:"
+                        android:textColor="#2196F3"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/amaranth"
+
+                        android:textStyle="bold"
+                        android:layout_span="2"
+                        />
+                </TableRow>
+
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/txt_reason_leave"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:hint="Reason"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/amaranth"
+
+                        android:layout_span="2"
+                        />
+                </TableRow>
+
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/txt_Description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="Description:"
+                        android:textColor="#2196F3"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/amaranth"
+                        android:textStyle="bold"
+                        android:layout_span="2"
+                        />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/txt_Description_leave"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Description"
+                        android:textSize="16sp"
+                        android:layout_span="2"
+                        android:fontFamily="@font/amaranth"
+
+                        />
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

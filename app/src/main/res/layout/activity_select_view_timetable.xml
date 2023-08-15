@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Student.select_view_timetable"
+   >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/main_toolbar"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="80dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/selecttt"
+                android:layout_marginStart="15dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/amaranth"
+                android:textColor="@color/blue"
+                android:textSize="22sp"
+               />
+
+            <Spinner
+                android:id="@+id/days"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:background="@drawable/spinner_style_all"
+                android:layout_marginStart="15dp"
+                android:entries="@array/day"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_marginTop="40dp"
+                />
+
+            <Spinner
+                android:id="@+id/ttdivision"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/spinner_style_all"
+                android:entries="@array/division"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_span="2"
+                android:layout_marginTop="20dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="200dp"
+                >
+
+                <android.widget.Button
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/buttondesign"
+                    android:onClick="view_data"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/amaranth"
+                    android:text="submit"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

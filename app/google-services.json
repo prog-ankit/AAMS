@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "812581169394",
+    "project_id": "attendance-and-academia",
+    "storage_bucket": "attendance-and-academia.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:812581169394:android:f8a8c47ec9d2806cd7086b",
+        "android_client_info": {
+          "package_name": "com.example.attendanceacademia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "812581169394-mpticd955vmkc52ds9chibor0rm746ce.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB07BoPNPKnOaFctKi4mruSuVfRRiXp8mw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "812581169394-mpticd955vmkc52ds9chibor0rm746ce.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

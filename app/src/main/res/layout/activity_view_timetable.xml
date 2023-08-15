@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="550dp"
+    android:background="@drawable/activitiesbg">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/main_toolbar"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="90dp">
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            >
+            <TableRow
+              >
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Time"
+
+                    android:fontFamily="@font/amaranth"
+                    android:textColor="@color/blue"
+                    android:textSize="16sp"
+                    />
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Faculty/Subject"
+
+                    android:textColor="@color/blue"
+
+                    android:fontFamily="@font/amaranth"
+                    android:textSize="16sp"
+                    />
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Room/Batch"
+                    android:fontFamily="@font/amaranth"
+                    android:layout_weight="1"
+                    android:textColor="@color/blue"
+                    android:textSize="16sp"
+                    />
+            </TableRow>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/timetableRecycler"
+                android:layout_marginTop="5dp"
+                android:scrollbars="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </TableLayout>
+
+
+
+
+    </LinearLayout></ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

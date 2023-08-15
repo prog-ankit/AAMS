@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Faculty.set_slt">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/main_toolbar"/>
+
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="15dp"
+                android:text="@string/arrangeslt"
+                android:fontFamily="@font/amaranth"
+                android:textColor="@color/blue"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+            <!-- From Date -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <Spinner
+                    android:id="@+id/type"
+                    android:layout_width="350dp"
+                    android:layout_height="50dp"
+                    android:layout_span="2"
+                    android:background="@drawable/spinner_style_all"
+                    android:entries="@array/vslt"
+                    android:layout_marginStart="10dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+
+                <EditText
+                    android:id="@+id/hint_date"
+                    android:layout_width="match_parent"
+
+                    android:backgroundTint="@color/blue"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:drawableStart="@drawable/ic_date"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/amaranth"
+                    android:layout_height="50dp"
+                    android:autofillHints="auto"
+                    android:editable="false"
+                    android:ems="10"
+                    android:hint="Date" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+
+                <EditText
+                    android:id="@+id/hint_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:backgroundTint="@color/blue"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:drawableStart="@drawable/ic_time"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/amaranth"
+                    android:editable="false"
+                    android:ems="10"
+                    android:hint="Time" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+
+                <EditText
+                    android:id="@+id/hint_topic"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:backgroundTint="@color/blue"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:drawableStart="@drawable/ic_topic"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/amaranth"
+                    android:hint="Topic" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+
+                <EditText
+                    android:id="@+id/hint_lect"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:backgroundTint="@color/blue"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:drawableStart="@drawable/ic_person"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/amaranth"
+                    android:hint="Lecturer name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/hint_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:backgroundTint="@color/blue"
+                    android:textSize="16sp"
+                    android:maxLines="6"
+                    android:textColor="@color/black"
+                    android:drawableStart="@drawable/ic_description"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/amaranth"
+                    android:hint="Description" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="206dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.widget.Button
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="70dp"
+                    android:background="@drawable/buttondesign"
+                    android:onClick="submitslt"
+                    android:text="submit"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/amaranth"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Student.editProfile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/main_toolbar"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/editprofile"
+            android:fontFamily="@font/amaranth"
+            android:layout_marginStart="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:textSize="22sp"
+            android:layout_marginBottom="10dp"
+            />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/stduserprof"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_user"
+            android:layout_marginTop="10dp"
+
+            />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:hint="Username"
+            android:fontFamily="@font/amaranth"
+            android:inputType="text"
+
+            android:layout_marginTop="15dp"
+            android:drawableStart="@drawable/ic_user"
+            android:drawablePadding="5dp"
+            android:textColor="@color/blue"
+            android:textColorHint="@color/blue"
+            android:background="@drawable/edittext_activity"
+            android:focusable="false"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/contact"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/amaranth"
+            android:background="@drawable/edittext_activity"
+            android:textColorHint="@color/blue"
+            android:drawableStart="@drawable/ic_contact"
+            android:drawablePadding="5dp"
+            android:textColor="@color/blue"
+            android:inputType="number"
+            android:hint="Contact"
+            android:focusable="false"
+            />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/edittext_activity"
+            android:textColorHint="@color/blue"
+            android:fontFamily="@font/amaranth"
+
+            android:drawableStart="@drawable/ic_mail"
+            android:drawablePadding="5dp"
+            android:textColor="@color/blue"
+            android:hint="Email"
+            android:focusable="false"
+          />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            android:padding="5dp">
+
+            <android.widget.Button
+                android:id="@+id/changepassword"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/buttondesign"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:fontFamily="@font/amaranth"
+                android:onClick="forgotpassword"
+                android:text="Change Password"
+                android:textColor="@color/white" />
+
+            <android.widget.Button
+                android:id="@+id/stdupdatebutton"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+
+                android:layout_weight="1"
+                android:background="@drawable/buttondesign"
+                android:fontFamily="@font/amaranth"
+                android:textSize="16sp"
+                android:onClick="update"
+                android:text="Edit Profile"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

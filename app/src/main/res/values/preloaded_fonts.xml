@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/acme</item>
+        <item>@font/aladin</item>
+        <item>@font/allerta</item>
+        <item>@font/amaranth</item>
+        <item>@font/amiko</item>
+        <item>@font/aref_ruqaa</item>
+        <item>@font/autour_one</item>
+        <item>@font/brawler</item>
+        <item>@font/capriola</item>
+        <item>@font/chelsea_market</item>
+        <item>@font/finger_paint</item>
+        <item>@font/kavoon</item>
+        <item>@font/lemon</item>
+        <item>@font/macondo</item>
+        <item>@font/metamorphous</item>
+        <item>@font/modern_antiqua</item>
+        <item>@font/montserrat_alternates</item>
+        <item>@font/new_rocker</item>
+        <item>@font/rancho</item>
+        <item>@font/yatra_one</item>
+    </array>
+</resources>

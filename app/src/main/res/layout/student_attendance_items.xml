@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/enrollment"
+            android:layout_width="match_parent"
+            android:text="Enrollment"
+            android:fontFamily="@font/amaranth"
+            android:textSize="18sp"
+
+            android:textColor="#2196F3"
+            android:layout_height="wrap_content"
+             />
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:text="Names"
+            android:textSize="16sp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/amaranth"
+
+            android:paddingTop="2dp"
+            android:layout_below="@id/enrollment"
+            android:layout_height="wrap_content"
+           />
+    </RelativeLayout>
+
+</LinearLayout>

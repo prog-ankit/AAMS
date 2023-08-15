@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.attendanceacademia">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/ic_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Attendanceacademia"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Student.student_timetable_proxy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".forgot_password"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Faculty.showProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Faculty.view_profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Faculty.activity_profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Faculty.edit_proxy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Faculty.edit_proxy_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Faculty.view_proxy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Faculty.proxy_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Student.view_timetable"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Student.select_view_timetable"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Faculty.edit_mark_attendance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Faculty.edit_select_attendance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Faculty.fac_show_attend"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Faculty.set_proxy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Faculty.set_meeting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Faculty.set_slt"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Faculty.fac_view_attendance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Faculty.editSlt"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Faculty.edit_slt_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Faculty.editMeeting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Faculty.edit_meeting_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Faculty.manage_leave"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Faculty.activity_leave"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Faculty.select_attendance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Faculty.mark_attendance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Faculty.view_provisional_detain"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Faculty.fac_list_meeting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Faculty.faculty_slt"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HOD.hod_dash"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Faculty.fac_edit_profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Faculty.slt_desc"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Student.student_leave"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Student.student_attendance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Faculty.view_slt"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Student.leave_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Student.view_leave"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Student.view_attendance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Student.apply_leave"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Student.view_detain"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Student.std_dash"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Faculty.faculty_dash"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Faculty.activity_meeting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Faculty.activity_proxy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Faculty.activity_attendance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTop"
+            android:label="MainActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <service
+            android:name=".FirebaseMessagingService"
+            android:permission="TODO"
+            tools:ignore="ExportedService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
